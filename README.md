@@ -1,9 +1,17 @@
 # FGAP: an automated gap closing tool 
 
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat-square)](http://bioconda.github.io/recipes/fgap/README.html)
+
 Piro, V. C., Faoro, H., Weiss, V. a, Steffens, M. B., Pedrosa, F. O., Souza, E. M., & Raittz, R. T. (2014). FGAP: an automated gap closing tool. BMC Research Notes, 7(1), 371. http://doi.org/10.1186/1756-0500-7-371
-	
-Run (command line version with Octave):
----------------------------------------
+
+Install and run (bioconda):
+---------------------------
+
+	conda install -c bioconda fgap
+	FGAP "-d sample_data/DRAFT_ecoli_hiseq454.fasta -a 'sample_data/DATASET_ecoli_hiseq.fasta,sample_data/DATASET_ecoli_hiseq.fasta' -o sample_data_results -t 2"
+
+Install and run (source):
+-------------------------
 
 	# On the same folder of the fgap.m script
 	octave --no-gui --eval 'fgap -d sample_data/DRAFT_ecoli_hiseq454.fasta -a sample_data/DATASET_ecoli_hiseq.fasta'
@@ -31,7 +39,7 @@ Parameters:
 -----------
 
 	------------------------------------------
-					FGAP v1.8.1
+		        FGAP v1.8.1
 	------------------------------------------
 
 
